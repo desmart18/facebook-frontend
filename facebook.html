@@ -66,6 +66,42 @@ body {
   background: #ccc;
 }
 
+.vertical-menu a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.far fa-newspaper{
+    color: black;
+}
+
+.sidenav {
+    width: 165px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+
+    text-decoration: none;
+    font-size: 14px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
 </style>
 </head>
@@ -75,22 +111,53 @@ body {
   <a style = "margin-left: 10%" class="active" href="#fblogo"><i class="fa fa-facebook-official fa-2x" style="color:white" aria-hidden="true"></i></a>
   <div style = "margin-top: 0.5%; width: 460px" class="search-container">
     <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
+      <input type="text" placeholder="Search" nam"search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
-    <a style = "margin-left: 200px" href="#user"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:30px; height:32px"</a>
+    <a style = "margin-left: 200px" href="#user"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:30px; height:32px"></a>
     
-  <a style = "color: rgb(0, 0, 102); margin-top: 5px" href="#UserChange"><i class="material-icons">swap_vertical_circle</i></a>
-  <a style = "color: rgb(228, 231, 231); margin-top: 7px" href="#Home">Home</a>
-  <a style = "color: rgb(0, 0, 102); margin-top: 5px; font-size: 1.5em;" href="#FriendRequests"><i class="material-icons">supervisor_account</i></a>
-  <a style = "color: rgb(0, 0, 102); margin-top: 5px; font-size: 1.5em;" href="#Chat"><i class="fab fa-facebook-messenger"></i></a>
-  <a style = "color: rgb(0, 0, 102); margin-top: 5px; font-size: 1em;" href="#Notification"><i class="material-icons">public</i></a>
-  <a style = "color: rgb(0, 0, 102); margin-top: 8px; font-size: 1em;" href="#Help"><i class="fas fa-question"></i></a>
-  <a style = "color: rgb(0, 0, 102); margin-top: 8px; font-size: 1em;" href="#Help"><i class="material-icons" style="font-size:18px">arrow_drop_down</i></a>
+  <a style = "color: rgb(0, 0, 102); margin-top: 5px" href="#USERCHANGE"><i class="material-icons">swap_vertical_circle</i></a>
+  <a style = "color: rgb(228, 231, 231); margin-top: 7px" href="#HOME">Home</a>
+  <a style = "color: rgb(0, 0, 102); margin-top: 5px; font-size: 1.5em;" href="#FRIENDREQUESTS"><i class="material-icons">supervisor_account</i></a>
+  <a style = "color: rgb(0, 0, 102); margin-top: 5px; font-size: 1.5em;" href="#CHAT"><i class="fab fa-facebook-messenger"></i></a>
+  <a style = "color: rgb(0, 0, 102); margin-top: 5px; font-size: 1em;" href="#NOTIFICATIONS"><i class="material-icons">public</i></a>
+  <a style = "color: rgb(0, 0, 102); margin-top: 8px; font-size: 1em;" href="#HELP"><i class="fas fa-question"></i></a>
+  <a style = "color: rgb(0, 0, 102); margin-top: 8px; font-size: 1em;" href="#MANU"><i class="material-icons" style="font-size:18px">arrow_drop_down</i></a>
 
 
 </div>
+
+
+<div class="sidenav" style = "margin-left: 9%; margin-top: 1.8%;">
+  <a href="#alo" class="active"><pre style = "font-size: 14px; color: black;"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:15px; height:16px; margin-right: 5px">  Davit Magaltadze</pre></a>
+  
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="far fa-newspaper" style = "font-size: 16px; color: rgb(51, 102, 255)"></i>  News Feed</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fab fa-facebook-messenger" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  Messanger</pre></a>
+  <a style = "color: grey; font-weight: bold;">Shortcuts</a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-book" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  OOP-ს კორიფეები</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-university" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  Freeuni Internships</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-laptop" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  ალგორითმების ჯგ..</pre></a>
+  <a href="#alo" class="active"><pre style = "font-size: 14px; color: black;"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/17796177_1855903341328617_6081686190526034236_n.jpg?_nc_cat=0&oh=dcf5469b5b73b27b569b7172417a6abb&oe=5B52EDF0" style="width:18px; height:19px; margin-right: 5px">  ბოჭორას ანგელოზ..</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-users" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  კომპიუტერული მ..</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-calendar-alt" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  Bochora's Angels V..</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: blue; font-size: 14px; font-weight: bold;"><i class="fas fa-arrow-down" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  See More...</pre></a>
+  <a style = "color: grey; font-weight: bold;">Explore</a>
+
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-users" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  Groups</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-calendar-alt" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    Events</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-flag" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    Pages</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="far fa-user" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    Friend List</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-gamepad" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    Games</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-comment-alt" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    Reccomendations</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="far fa-clock" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    On this day</pre></a>
+  <a href = "#" style = "margin-top: 1px"><pre style = "color: blue; font-size: 14px; font-weight: bold;"><i class="fas fa-arrow-down" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>    See More...</pre></a>
+
+
+  <!-- <a href="#">Link 3</a>
+  <a href="#">Link 4</a> -->
+</div>
+
 
 </body>
 </html>
