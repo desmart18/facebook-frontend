@@ -13,6 +13,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240,240,240);
 }
 
 .topnav {
@@ -106,7 +107,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(240,240,240);
+    /*background-color: rgb(240,240,240);*/
 }
 
 li {
@@ -130,6 +131,34 @@ p span
     display: block;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
+.vertical-menu {
+    width: 17%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 </style>
 </head>
 <body>
@@ -142,7 +171,7 @@ p span
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
-    <a style = "margin-left: 200px; margin-top: -0.2%" href="#user"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:30px; height:32px"></a>
+    <a style = "margin-left: 200px; margin-top: -0.2%" href="#user"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:30px; height:32px"></a>
     
   <a style = "color: rgb(0, 0, 102); margin-top: 1px" href="#USERCHANGE"><i class="material-icons">swap_vertical_circle</i></a>
   <a style = "color: rgb(228, 231, 231); margin-top: 3px" href="#HOME">Home</a>
@@ -157,7 +186,7 @@ p span
 
 
 <div class="sidenav" style = "margin-left: 10.5%; margin-top: 2%;">
-  <a href="#alo" class="active"><pre style = "font-size: 14px; color: black;"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:15px; height:16px; margin-right: 5px">  Davit Magaltadze</pre></a>
+  <a href="#alo" class="active"><pre style = "font-size: 14px; color: black;"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:15px; height:16px; margin-right: 5px">  Davit Magaltadze</pre></a>
   
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="far fa-newspaper" style = "font-size: 16px; color: rgb(51, 102, 255)"></i>  News Feed</pre></a>
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fab fa-facebook-messenger" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  Messanger</pre></a>
@@ -165,7 +194,7 @@ p span
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-book" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  OOP-ს კორიფეები</pre></a>
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-university" style = "font-size: 19px; color: brown"></i>  Freeuni Internships</pre></a>
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-laptop" style = "font-size: 19px; color: black"></i>  ალგორითმების ჯგ..</pre></a>
-  <a href="#alo" class="active"><pre style = "font-size: 14px; color: black;"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/17796177_1855903341328617_6081686190526034236_n.jpg?_nc_cat=0&oh=dcf5469b5b73b27b569b7172417a6abb&oe=5B52EDF0" style="width:18px; height:19px; margin-right: 5px">  ბოჭორას ანგელოზ..</pre></a>
+  <a href="#alo" class="active"><pre style = "font-size: 14px; color: black;"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/17796177_1855903341328617_6081686190526034236_n.jpg?_nc_cat=0&oh=dcf5469b5b73b27b569b7172417a6abb&oe=5B52EDF0" style="width:18px; height:19px; margin-right: 5px">  ბოჭორას ანგელოზ..</pre></a>
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-users" style = "font-size: 19px; color: rgb(51, 102, 255)"></i>  კომპიუტერული მ..</pre></a>
   <a href = "#" style = "margin-top: 1px"><pre style = "color: black; font-size: 14px"><i class="fas fa-calendar-alt" style = "font-size: 19px; color: red"></i>  Bochora's Angels V..</pre></a>
   
@@ -184,25 +213,26 @@ p span
   <!-- <a href="#">Link 3</a>
   <a href="#">Link 4</a> -->
 </div>
+
 <div style = "margin-left: 23%; margin-top: 1%">
     <!-- <a> -->
-        <ul style = "float: left; margin-top: 5%">
+        <ul style = "float: left; margin-top: 5%; background-color: white">
           <li><a class="active" href="#home"><i class="far fa-edit"> Make Post |</i></a></li>
           <li><a class="active" href="#home"><i class="far fa-image"> Photo/Video Album |</i></a></li>
           <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li>
         </ul>
     <!-- </a> -->
     <!-- <a> -->
-        <ul style = "clear:both">
-          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
-          <li style = "margin-top: 1.5%">
+        <ul style = "clear:both; background-color: white">
+          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
+          <li style = "margin-top: 1.5%; background-color: white">
               <textarea rows="4" cols="60" placeholder="What's on your mind, Davit?"></textarea>
           </li>
           <!-- <li><a class="active" href="#home"><i class="far fa-image"> Photo/Video Album |</i></a></li>
           <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li> -->
         </ul>
 
-        <ul style = "clear:both; float: left">
+        <ul style = "clear:both; float: left; background-color: white">
           <li><a class="active" href="#home"><i class="fas fa-image" style = "color: green"></i> Photo/Video</a></li>
           <li><a class="active" href="#home"><i class="fas fa-smile" style = "color: orange"></i> Feeling/Acvivity</a></li>
           <li><a class="active" href="#home"><i class="fas fa-ellipsis-h" style = "color: grey"></i></a></li>
@@ -212,13 +242,55 @@ p span
     <!-- </a> -->
 </div>
 
-<div style = "margin-left: 23%; margin-top: 5%">
+<div class="vertical-menu" style="position: fixed; margin-left: 75%; margin-top: -2.7%">
+  <p style="font-size: 12px; color: grey; font-weight: bold">CONTACTS</p>
+  <a href="#"><img class="img-circle" src="http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/sheldon-cooper-1.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Sheldon Cooper            <i class="fas fa-circle" style="color: green; font-size: 0.7em"></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="http://images.cdn.starpulse.com/news/bloggers/1279398/blog_images/sheldon-cooper-1.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Sheldon Cooper            <i class="fas fa-circle" style="color: green; font-size: 0.7em"></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Penny_bigbangtheory.jpg/250px-Penny_bigbangtheory.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Penny                            <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+  
+  <a href="#"><img class="img-circle" src="https://mymovietalks.files.wordpress.com/2013/11/bernadette-rostenkowski.jpg?w=292" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Bernadette Rostenk..    <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Leonard_Hofstadter.jpg/220px-Leonard_Hofstadter.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Leonard Hofstadter       <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+  
+  <a href="#"><img class="img-circle" src="https://vignette.wikia.nocookie.net/bigbangtheory/images/a/a5/Amy_smiles.jpg/revision/latest/scale-to-width-down/180?cb=20111225140911" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Amy Farrah Fowler       <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://vignette.wikia.nocookie.net/bigbangtheory/images/1/17/Howard_Wolowitz_Official_NASA_Portrait.jpg/revision/latest?cb=20160116035529" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Howard Wolowitz          <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  
+  <a href="#"><img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-xcUaGSWtdxT_aJOpvV1UtbFF7cWjiOF5J7_enEavwSwp3MUK" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Raj Koothrappali           <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://vignette.wikia.nocookie.net/bigbangtheory/images/3/37/Leslie.jpg/revision/latest/zoom-crop/width/240/height/240?cb=20090412160344" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Leslie Winkle                <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+  
+  <a href="#"><img class="img-circle" src="https://vignette.wikia.nocookie.net/bigbangtheory/images/f/f6/BarryKripke.png/revision/latest?cb=20110225223327" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Barry Kripke                 <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://the-big-bang-theory.com/images/uploads/1/rs_2174f98691bfb1c140d.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Stuart Bloom                <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://pbs.twimg.com/profile_images/492003540819144704/3xKB2iDH.jpeg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Erlich Bachman            <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://pbs.twimg.com/profile_images/725321660484583424/ArQ4fM3k_400x400.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Gilfoyle                         <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/04/richard_hendricks_screen_shot.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Richard Hendricks        <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://www.magicalquote.com/wp-content/uploads/2015/07/Gavin-Belson.jpg" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Gavin Belson                <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://vignette.wikia.nocookie.net/silicon-valley/images/8/8e/Binding_Arbitration_Image_2.jpg/revision/latest/zoom-crop/width/480/height/480?cb=20151228221828" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Dinesh Chugtai             <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+  
+  <a href="#"><img class="img-circle" src="https://vignette.wikia.nocookie.net/silicon-valley/images/c/c9/Silicon-Valley-Wikia_infobox-Jared-Dunn_01.jpg/revision/latest?cb=20140407101454" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Jared Dunn                   <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+  <a href="#"><img class="img-circle" src="https://imagesvc.timeincapp.com/v3/fan/image?url=https://hiddenremote.com/files/2017/05/3a71366fa4c6fc45b71bfb45f82b265ab4eacafe9c37a93009f555c0cae02a3db500806a128bdf0fa75b694f2a5d347a.jpeg&" style="width:32px; height:30px; margin-right: 5px; margin: none"><pre style = "color: black; margin-top: -8.5%; margin-left: 15%">  Nelson Bighetti              <i class="fas fa-circle" style="color: green; font-size: 0.7em; margin-left: "></i></pre></a>
+
+
+</div>
+
+<div style = "margin-left: 23%; margin-top: 5%; background-color: white; display: inline-block; margin-right: 30%; margin-top: 2%">
     <ul style = "clear:both">
-          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
+          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
 
           <li><a class="active" href="#home"><p> <span style = "color: blue; font-weight: bold">Cristiano Ronaldo</span> <span style = "float: left; font-size: 12px; color: grey">20 hrs <i class="material-icons" style = "font-size: 12px">public</i></span></p></a></li>
 
-          <li style = "clear: both; margin-top: -4%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
+          <li style = "clear: both; margin-top: -8%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
 
 
           <li style = "clear: both; margin-top: -4%; float: left"><a href="#alo" class="active"><pre style = "font-size: 14px; color: black"><img src="https://scontent.ftbs4-1.fna.fbcdn.net/v/t1.0-9/31393470_10156392779342164_2655148855401644032_n.jpg?_nc_cat=0&oh=eb8f06aa2cd93ad677ac6c262b259d0c&oe=5B9B99FC" style="width:90%; height:60%; margin-right: 5px"></pre></a></li>
@@ -226,17 +298,17 @@ p span
           <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li> -->
           <li style = "clear: both; margin-top: -2%; margin-left: 5%"><a class="active" href="#home"><i class="far fa-thumbs-up"> Like </i></a></li>
           <li style="margin-top: -2%; margin-left: 18%"><a class="active" href="#home"><i class="far fa-comment-alt"> Comment </i></a></li>
-          <li style="margin-top: -2%; margin-left: 34%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
+          <li style="margin-top: -3%; margin-left: 70%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
 
           <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-thumbs-up" style="color: blue"></i></a></li>
-          <li style="margin-left: -3%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
-          <li style="margin-left: -3%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: orange"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: black"></i></a></li>
           <li style="margin-left: -2%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 15px"> Cristiano Ronaldo and 526K others </a></li>
 
           <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 12px"> 5,267 Shares </a></li>
 
           <ul style = "clear:both">
-          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
+          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
           <li style = "margin-top: 1.5%">
               <textarea rows="2" cols="60" placeholder="Write a comment..."></textarea>
           </li>
@@ -248,13 +320,13 @@ p span
         </ul>
 </div>
 
-<div style = "margin-left: 23%; margin-top: 5%">
+<div style = "margin-left: 23%; margin-top: 5%; background-color: white; display: inline-block; margin-right: 30%; margin-top: 2%">
     <ul style = "clear:both">
-          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
+          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
 
           <li><a class="active" href="#home"><p> <span style = "color: blue; font-weight: bold">Cristiano Ronaldo</span> <span style = "float: left; font-size: 12px; color: grey">20 hrs <i class="material-icons" style = "font-size: 12px">public</i></span></p></a></li>
 
-          <li style = "clear: both; margin-top: -4%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
+          <li style = "clear: both; margin-top: -8%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
 
 
           <li style = "clear: both; margin-top: -4%; float: left"><a href="#alo" class="active"><pre style = "font-size: 14px; color: black"><img src="https://scontent.ftbs4-1.fna.fbcdn.net/v/t1.0-9/31393470_10156392779342164_2655148855401644032_n.jpg?_nc_cat=0&oh=eb8f06aa2cd93ad677ac6c262b259d0c&oe=5B9B99FC" style="width:90%; height:60%; margin-right: 5px"></pre></a></li>
@@ -262,17 +334,17 @@ p span
           <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li> -->
           <li style = "clear: both; margin-top: -2%; margin-left: 5%"><a class="active" href="#home"><i class="far fa-thumbs-up"> Like </i></a></li>
           <li style="margin-top: -2%; margin-left: 18%"><a class="active" href="#home"><i class="far fa-comment-alt"> Comment </i></a></li>
-          <li style="margin-top: -2%; margin-left: 34%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
+          <li style="margin-top: -3%; margin-left: 70%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
 
           <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-thumbs-up" style="color: blue"></i></a></li>
-          <li style="margin-left: -3%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
-          <li style="margin-left: -3%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: orange"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: black"></i></a></li>
           <li style="margin-left: -2%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 15px"> Cristiano Ronaldo and 526K others </a></li>
 
           <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 12px"> 5,267 Shares </a></li>
 
           <ul style = "clear:both">
-          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
+          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
           <li style = "margin-top: 1.5%">
               <textarea rows="2" cols="60" placeholder="Write a comment..."></textarea>
           </li>
@@ -284,13 +356,13 @@ p span
         </ul>
 </div>
 
-<div style = "margin-left: 23%; margin-top: 5%">
+<div style = "margin-left: 23%; margin-top: 5%; background-color: white; display: inline-block; margin-right: 30%; margin-top: 2%">
     <ul style = "clear:both">
-          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
+          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
 
           <li><a class="active" href="#home"><p> <span style = "color: blue; font-weight: bold">Cristiano Ronaldo</span> <span style = "float: left; font-size: 12px; color: grey">20 hrs <i class="material-icons" style = "font-size: 12px">public</i></span></p></a></li>
 
-          <li style = "clear: both; margin-top: -4%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
+          <li style = "clear: both; margin-top: -8%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
 
 
           <li style = "clear: both; margin-top: -4%; float: left"><a href="#alo" class="active"><pre style = "font-size: 14px; color: black"><img src="https://scontent.ftbs4-1.fna.fbcdn.net/v/t1.0-9/31393470_10156392779342164_2655148855401644032_n.jpg?_nc_cat=0&oh=eb8f06aa2cd93ad677ac6c262b259d0c&oe=5B9B99FC" style="width:90%; height:60%; margin-right: 5px"></pre></a></li>
@@ -298,17 +370,17 @@ p span
           <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li> -->
           <li style = "clear: both; margin-top: -2%; margin-left: 5%"><a class="active" href="#home"><i class="far fa-thumbs-up"> Like </i></a></li>
           <li style="margin-top: -2%; margin-left: 18%"><a class="active" href="#home"><i class="far fa-comment-alt"> Comment </i></a></li>
-          <li style="margin-top: -2%; margin-left: 34%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
+          <li style="margin-top: -3%; margin-left: 70%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
 
           <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-thumbs-up" style="color: blue"></i></a></li>
-          <li style="margin-left: -3%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
-          <li style="margin-left: -3%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: orange"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: black"></i></a></li>
           <li style="margin-left: -2%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 15px"> Cristiano Ronaldo and 526K others </a></li>
 
           <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 12px"> 5,267 Shares </a></li>
 
           <ul style = "clear:both">
-          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
+          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
           <li style = "margin-top: 1.5%">
               <textarea rows="2" cols="60" placeholder="Write a comment..."></textarea>
           </li>
@@ -319,7 +391,46 @@ p span
         <li style = "clear: both; margin-top: -2%"><a class="active" href="#home" style="color: blue; font-size: 12px"> View all 5,346 comments </a></li>
         </ul>
 </div>
-       
+
+
+<div style = "margin-left: 23%; margin-top: 5%; background-color: white; display: inline-block; margin-right: 30%; margin-top: 2%">
+    <ul style = "clear:both">
+          <li style = "margin-left: 1.7%"><a href="#alo"><pre style = "font-size: 14px; color: blue; margin-left: 10px"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/27657581_10156187287847164_665747461774675239_n.jpg?_nc_cat=0&oh=6736ff4f50792ba9246e46375deba5fa&oe=5B61A837" style="width:42px; height:40px; margin-right: 5px"></pre></a></li>
+
+          <li><a class="active" href="#home"><p> <span style = "color: blue; font-weight: bold">Cristiano Ronaldo</span> <span style = "float: left; font-size: 12px; color: grey">20 hrs <i class="material-icons" style = "font-size: 12px">public</i></span></p></a></li>
+
+          <li style = "clear: both; margin-top: -8%; margin-left: 2.4%"><a><p> <span style = "color: black"> Vamos equipo! <i class="fas fa-thumbs-up" style = "font-size: 14px; color: brown"></i></span>  <span style = "float: left; font-size: 15px; margin-top: 4%; color: blue">See Translation </span></p></a></li>
+
+
+          <li style = "clear: both; margin-top: -4%; float: left"><a href="#alo" class="active"><pre style = "font-size: 14px; color: black"><img src="https://scontent.ftbs4-1.fna.fbcdn.net/v/t1.0-9/31393470_10156392779342164_2655148855401644032_n.jpg?_nc_cat=0&oh=eb8f06aa2cd93ad677ac6c262b259d0c&oe=5B9B99FC" style="width:90%; height:60%; margin-right: 5px"></pre></a></li>
+          <!-- <li><a class="active" href="#home"><i class="far fa-image"> Photo/Video Album |</i></a></li>
+          <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li> -->
+          <li style = "clear: both; margin-top: -2%; margin-left: 5%"><a class="active" href="#home"><i class="far fa-thumbs-up"> Like </i></a></li>
+          <li style="margin-top: -2%; margin-left: 18%"><a class="active" href="#home"><i class="far fa-comment-alt"> Comment </i></a></li>
+          <li style="margin-top: -3%; margin-left: 70%"><a class="active" href="#home"><i class="far fa-share-square"> Share </i></a></li>
+
+          <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-thumbs-up" style="color: blue"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="fas fa-heart" style="color: red"></i></a></li>
+          <li style="margin-left: -5%; margin-top: 1%"><a class="active" href="#home"><i class="far fa-frown" style="color: black"></i></a></li>
+          <li style="margin-left: -2%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 15px"> Cristiano Ronaldo and 526K others </a></li>
+
+          <li style = "clear: both; margin-left: 1%; margin-top: 1%"><a class="active" href="#home" style="color: blue; font-size: 12px"> 5,267 Shares </a></li>
+
+          <ul style = "clear:both">
+          <li><a href="#alo" class="active"><pre style = "font-size: 14px; color: black; margin-left: 10px; margin-top: -2%"><img class="img-circle" src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t31.0-8/21586546_1653964047988278_7797356899143779684_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGovams7w16Rj01XotMCDaM0rKRDVEJSOSwLshyZpLMoCe_CZHR1cxwejHuRRErjqslKIwsalPrQCGtb_WqGAFgPdQtltgHnsRq4oAsr6iV2Q&oh=8a4a6ca3c184e363a0dcd158296ad1b4&oe=5B5FC8E6" style="width:32px; height:30px; margin-right: 5px"></pre></a></li>
+          <li style = "margin-top: 1.5%">
+              <textarea rows="2" cols="60" placeholder="Write a comment..."></textarea>
+          </li>
+          <!-- <li><a class="active" href="#home"><i class="far fa-image"> Photo/Video Album |</i></a></li>
+          <li><a class="active" href="#home"><i class="fas fa-video"> Live Video |</i></a></li> -->
+        </ul>
+
+        <li style = "clear: both; margin-top: -2%"><a class="active" href="#home" style="color: blue; font-size: 12px"> View all 5,346 comments </a></li>
+        </ul>
+</div>
+
+
+
 
 </body>
 </html>
